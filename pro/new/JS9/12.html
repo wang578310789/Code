@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <p id="test">hello world</p>
+    <script>
+       /*  // remove -- 让元素消失
+        var test = document.getElementById("test");
+        test.onclick = function(){
+            this.remove();
+        } */
+
+        // appent() 可以传递多个参数
+        // prepend() 
+        var h1 = document.createElement("h1");
+        h1.innerHTML = "hello";
+        var h3 = document.createElement("h3");
+        h3.innerHTML = "world"
+        document.body.append(h1,h3);
+    </script>
+</body>
+</html>

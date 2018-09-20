@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/index.js"></script>
+    <title>瀑布流</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            width: 230px;
+            padding: 5px;
+            vertical-align: bottom;
+        }
+
+        .content {
+            width: 240px;
+            border: 1px solid rgba(51, 51, 51, 0.1);
+            float: left;
+            position: relative;
+        }
+
+        #container {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="content">
+            <img src="images/01.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/11.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/03.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/04.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/05.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/06.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/12.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/08.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/09.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/01.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/11.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/13.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/timg (2).jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/15.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/06.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/12.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/08.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/09.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/01.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/11.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/03.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/04.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/05.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/06.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/12.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/08.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/09.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/01.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/11.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/13.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/timg (2).jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/15.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/06.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/12.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/08.jpg" alt="">
+        </div>
+        <div class="content">
+            <img src="images/09.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        window.onload = function () {
+            var contents = document.getElementsByClassName("content");
+            var ww = window.innerWidth;   // 可视区域的宽
+            var cw = contents[0].offsetWidth;  // 图片的宽
+            var num = Math.floor(ww / cw);  // 一排能放几张图片
+            var container = document.getElementById("container");
+            container.style.width = num*cw+"px";
+            // 将第一排图片的高度放在同一个数组里
+            var content_arr = Array.prototype.slice.call(contents);
+            var arr_height = [];
+            content_arr.forEach((element, index) => {
+                if (index < num) {
+                    arr_height.push(element.offsetHeight)
+                } else {
+                    var minHeight = Math.min(...arr_height); // 获取数组最小高度
+                    var minIndex = arr_height.indexOf(minHeight); //获取最小高度的下标
+                    var offsetLeft = content_arr[minIndex].offsetLeft;//获取最小高度图片的左偏移量
+                    content_arr[index].style.position = "absolute"; //给下一张图片绝对定位
+                    content_arr[index].style.top = minHeight + "px"; //这张图片的top值，是最小高度
+                    content_arr[index].style.left = offsetLeft + "px";// 这张图片的left值，是最小高度图片的左偏移量
+                    arr_height[minIndex] += content_arr[index].offsetHeight; //数组高度变化，重新设置数组 a+=b   a=a+b
+                }
+            }) 
+        }
+    </script>
+</body>
+
+</html>

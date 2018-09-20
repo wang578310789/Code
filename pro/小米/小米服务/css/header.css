@@ -1,0 +1,433 @@
+*{margin: 0;padding: 0;}
+.header{
+    height: 37px;
+    border-bottom: 1px solid #C0BEC9;
+}
+.header-nav{
+    width: 1240px;
+    height: 37px;
+    margin: 0 auto;
+}
+.menu{
+    width: 545px;
+    height: 37px;
+    float: left;
+    font-size: 12px;
+    line-height: 37px;
+}
+.menu a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.menu span{
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #C0BEC9;
+}
+.loginbar{
+    width: 90px;
+    height: 37px;
+    float: right;
+    font-size: 12px;
+    line-height: 37px;
+}
+.loginbar a{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.loginbar span{
+    margin-left: 4px;
+    margin-right: 4px;
+    color: #C0BEC9;
+}
+
+
+
+
+.subnavigation{
+    width: 1240px;
+    height: 70px;
+    margin: 20px auto;
+    position: relative;
+}
+.logo{
+    width: 70px;
+    height: 70px;
+    float: left;
+}
+.time{
+    width: 125px;
+    height: 70px;
+    float: right;
+}
+.shopcar{
+    margin-top: 10px;
+    width: 125px;
+    height: 40px;
+    background-color: rgb(253, 215, 44);
+    border: none;
+    position: relative;
+}
+.shopcar img{
+    position: absolute;
+    top: 12px;
+    left: 35px;
+}
+.shopcar a{
+    position: absolute;
+    text-decoration: none;
+    color: #333;
+    top: 10px;
+    left: 50px;
+}
+.date{
+    width: 125px;
+    height: 20px;
+    position: relative;
+    
+}
+.date img{
+    position: absolute;
+    top: 2px;
+    left: 10px;
+}
+.date span{
+    font-size: 12px;
+    position: absolute;
+    left: 32px;
+    top: 2px;
+}
+.search{
+    width: 430px;
+    height: 40px;
+    float: right;
+    position: relative;
+}
+.search input{
+    width: 380px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 1px solid #929091;
+    position: absolute;
+    top: 31px;
+    left: 1px;
+}
+.search button{
+    width: 40px;
+    height: 40px;
+    background: url("../images/fangdajing.png") no-repeat 50% 50%;
+    box-sizing: border-box;
+    border: 1px solid #929091;
+    position: absolute;
+    left: 380px;
+    top: 31px;
+}
+.hot{
+    width: 160px;
+    height: 20px;
+    position: absolute;
+    top: 38px;
+    left: 890px;
+}
+.hot a{
+    text-decoration: none;
+    background-color: rgb(230, 230, 230);
+    font-size: 12px;
+    color: #333;
+}
+
+
+
+
+.submenu{
+    width: 1240px;
+    height: 50px;
+    margin: 20px auto;
+}
+.submenu-left{
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ff4a00;
+    float: left;
+}
+.submenu-right{
+    width: 990px;
+    height: 50px;
+    background-color: #404145;
+    float: right;
+}
+.submenu-left h2{
+    font-size: 18px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    margin-left: 30px;
+}
+.iconfont{
+    font-size: 18px;
+    color: #FFFFFF;
+    margin-left: 75px;
+}
+.submenu-right h2{
+    width: 99px;
+    height: 50px;
+    font-size: 18px;
+    line-height: 50px;
+    text-decoration: none;
+    color: #FFFFFF;
+    display: inline-block;
+    text-align: center;
+}
+
+.column{
+    width: 1240px;
+    height: 20px;
+    margin: -10px auto;
+}
+.column p{
+    font-size: 12px;
+    color: #929091;
+}
+.column span{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.column a{
+    font-size: 18px;
+    line-height: 20px;
+    color: #000000;;
+}
+
+
+
+.content{
+    overflow: hidden;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    width:1240px;
+    height:300px;
+}
+.content img{
+    float:left;
+}
+#btns .current{
+    background: orangered;
+}
+#list{
+   position: absolute;
+   height:300px; 
+   width:4960px;
+}
+#prev,#next{
+    cursor: pointer;
+    top:50%;
+    transform: translateY(-50%);
+    width:40px;
+    height:74px;
+    position: absolute;
+    z-index: 100;
+    background: url(../images/icon-slides.png);
+    border:none;
+}
+#next{
+    right:0;
+    background-position-x:-43px 
+}
+#btns{
+    bottom: 40px;
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+    z-index: 101;
+}
+#btns span{
+    cursor: pointer;
+    border-radius: 50%;
+    width:20px;
+    height:20px;
+    display: inline-block;
+    border:1px solid #fff;
+    background: rgba(97, 96, 96, 0.3)
+}
+
+
+.commodity{
+    width: 1240px;
+    margin: 20px auto;
+}
+.commodity-p p{
+    font-size: 18px;
+}
+.commodity-box{
+    width: 1240px;
+    height: 255px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #DFDFDF;
+    box-sizing: border-box;
+}
+.box{
+    width: 1100px;
+    height: 255px;
+    margin: 0 auto;
+    display: flex;
+}
+.box>div{
+    width: 277px;
+    height: 255px;
+    text-align: center;
+    font-size: 14px;
+}
+
+
+
+
+.problem{
+    width: 1240px;
+    height: 380px;
+    margin: 20px auto;
+}
+.problem-p p{
+    font-size: 18px;
+}
+.problem-box{
+    width: 1240px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 1px solid #DFDFDF;
+    box-sizing: border-box;
+
+}
+.download{
+    width: 1240px;
+    height: 145px;
+    margin-top: 10px;
+    display: flex;
+}
+.download>div{
+    width: 300px;
+    height: 145px;
+    background-color: #FAFAFA;
+    text-align: center;
+    margin: 10px auto;
+}
+.download>div img{
+    margin-top: 40px;
+}
+.query{
+    width: 200px;
+    height: 40px;
+    position: relative;
+    box-sizing: border-box;
+}
+.query input{
+    width: 160px;
+    height: 40px;
+    position: absolute;
+    box-sizing: border-box;
+    top: 60px;
+    right: 80px;
+}
+.query button{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    border: 1px solid #C0BEC9;
+    background: url("../images/fangdajing.png") no-repeat 50% 50%;
+    box-sizing: border-box;
+    top: 60px;
+    right: 41px;
+}
+
+
+
+.servicer{
+    width: 1240px;
+    height: 320px;
+    margin: 20px auto;
+}
+.servicer-p{
+    width: 1240px;
+    height: 20px;
+}
+.servicer-p p{
+    font-size: 18px;
+}
+.servicer-box{
+    width: 1240px;
+    height: 300px;
+    margin-bottom: 20px;
+    border-top: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    display: flex;
+}
+.servicer-p a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #333;
+    float: right;
+}
+.hotspot{
+    width: 206px;
+    height: 225px;
+    border-right: 1px solid #DFDFDF;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 30PX;
+}
+.hotspot-ul{
+    width: 160px;
+    height: 120px;
+    margin: 0 auto;
+}
+.hotspot-ul li{
+    text-align: left;
+    list-style: none;
+    font-size: 12px;  
+    margin-top: 10px;
+    color: #525151;
+}
+.hotspot-ul>.first{
+    font-size: 18px;
+    color: #333333;
+}
+.artificial{
+    width: 1240px;
+    height: 500px;
+    margin: 30px auto;
+    display: flex;
+    border-top: 1px solid #DFDFDF;
+    box-sizing: border-box;
+}
+.artificial-box{
+    width: 287px;
+    height: 440px;
+    margin: 40px auto;
+    text-align: center;
+    position: relative;
+}
+.artificial-box button{
+    position: absolute;
+    width: 287px;
+    height: 92px;
+    border: none;
+    background-color: #333;
+    top: 347px;
+    left: 0;
+}
+.artificial-box h4{
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.artificial-box p{
+    margin-top: 10px;
+    color: #FFFFFF;
+}

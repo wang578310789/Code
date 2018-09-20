@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/2.css">
+</head>
+<body>
+    <div class="form">
+        <ul class="tab">
+            <li class="current">帐号登录</li>
+            <li>扫码登录</li>
+        </ul>
+        <div class="content">
+            <input type="text" placeholder="邮箱/手机号码/小米ID" class="accounts">
+            <input type="text" placeholder="密码" class="password">
+            <button>登录</button>
+            <div class="loginbar">
+                <a href="#" class="one">手机短信登录/注册</a>
+                <a href="#" class="two">立即登陆|忘记密码</a>
+            </div>
+            <div class="nav">
+                <fieldset class="parent">
+                    <legend align="center" class="child">其他方式登录</legend>
+                </fieldset>
+            </div>
+            <div class="login">
+                <a class="login-qq"><span class="qq"></span></a>
+                <a class="login-weibo"><span class="weibo"></span></a>
+                <a class="login-zhifubao"><span class="zhifubao"></span></a>
+                <a class="login-weixin"><span class="weixin"></span></a>
+            </div>
+            <div class="sidebar">
+                <p class="erweima"><img src="images/erweima.png" alt=""></p>
+                <p class="app">使用<a href="#">小米商城APP</a>扫一扫</p>
+                <p>小米手机可打开「设置」>「小米帐号」扫码登录</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var lis = document.getElementsByTagName("lis");
+        var contents = document.querySelectorAll(".content>div");
+        for(let i=0;i<lis.length;i++){
+            lis[i].index = i;
+            lis[i].onclick = function(){
+                for(let i=0;i<lis.length;i++){
+                    lis[i].className = "";
+                }
+                this.className = "current";
+                for(let i=0;i<contents.length;i++){
+                    contents[i].style.display = "none";
+                }
+                contents[this.index].style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

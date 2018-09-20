@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        ul{
+            margin: 0 auto;
+        }
+        li{
+            width: 60px;
+            height: 30px;
+            float: left;
+            list-style: none;
+            font-size: 16px;
+        }
+        #two{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li id="one">
+            5
+            <div id="two">
+                <img src="images/01.png" alt="">
+            </div>
+        </li>
+    </ul>
+    <script>
+        var one = document.getElementById("one");
+        var two = document.getElementById("two");
+        one.function = () =>{
+            two.classList.toggle("none");
+        }
+    </script>
+</body>
+</html>

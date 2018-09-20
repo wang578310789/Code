@@ -1,0 +1,26 @@
+//1.变量
+$bg:rgb(253, 92, 92);
+$fontColor:#333;
+$m-font:14px;
+body{
+    background: $bg;
+    color: $fontColor;
+    font-size: $m-font;
+}
+
+//2.嵌套
+/*div>p{
+    color: yellow;
+}*/
+
+div{
+    p{
+        color: yellow;
+        &:hover{
+            color:rgb(85, 240, 131);
+        }
+    }
+    &:hover{
+        color:rgb(90, 90, 240);
+    }
+}

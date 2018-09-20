@@ -1,0 +1,4 @@
+
+<import src="/pages/template/banner"></import>
+<template is="banner" data="{{imgUrl}}"></template>
+<button bindtap = "toggleUser">user</button>

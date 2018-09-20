@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/1.css">
+    <link rel="stylesheet" href="bootstrap/css/base.css">
+    <script src="bootstrap/js/jquery-3.2.1.js"></script>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/container.js"></script>
+</head>
+<body>
+<div class="box">
+    <div class="nav">
+        <img src="images/logo0.png" alt="">
+        <div class="nav-1">
+            <a href="#">首页</a>
+            <a href="#">关于公司</a>
+            <a href="#">产品展示</a>
+            <a href="#">招商加盟</a>
+            <a href="#">联系我们</a>
+        </div>
+    </div>
+    <div class="container" id="container"></div>
+</div>
+<script> 
+    $(function(){
+        $('.nav>li').click(function(){
+            $(this).addClass("current").siblings().removeClass("current")
+            console.log($(this).index())
+            $(".con>div").eq($(this).index()).show(300).siblings().hide(300)
+        })
+    })
+</script>    
+</body>
+</html>

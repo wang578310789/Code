@@ -1,0 +1,168 @@
+*{margin: 0; padding: 0;}
+.form{
+    width: 400px;
+    height: 500px;
+    border: 1px solid #333;
+    box-sizing: border-box;
+    margin: 20px auto;
+}
+.tab{
+    width: 360px;
+    height: 60px;
+    text-align: center;
+    margin: 30px auto;
+    font-size: 26px;
+    
+}
+li{
+    width: 180px;
+    line-height: 60px;
+    float: left;
+    list-style: none;
+    color: #333;
+}
+.current{
+    color: #EF5B00;
+}
+.content{
+    width: 360px;
+    height: 440px;
+    margin: 0 auto;
+}
+.accounts{
+    width: 360px;
+    height: 50px;
+}
+.password{
+    width: 360px;
+    height: 50px;
+    margin-top: 20px;
+}
+.content button{
+    width: 360px;
+    height: 50px;
+    margin-top: 25px;
+    border: none;
+    background-color: #EF5B00;
+    font-size: 20px;
+}
+.loginbar{
+    width: 360px;
+    height: 20px;
+    margin: 0 auto;
+}
+.one{
+    float: left;
+    text-decoration: none;
+    color: #EF5B00;
+}
+.two{
+    float: right;
+    text-decoration: none;
+    color: #ABABAB;
+}
+.nav{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 95px;
+}
+.parent{
+    border-top: 1px solid #e0e0e0;
+    padding-top: 10px;
+}
+fieldset{
+    border: 0;
+}
+.child{
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: 0 auto;
+    text-align: center;
+}
+.login{
+    width: 360px;
+    height: 35px;
+    text-align: center;
+    margin: 0 auto;
+}
+.login-qq{
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #0288D1;
+}
+.login-weibo{
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #D32F2F;
+}
+.login-zhifubao{
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #00AAEE;
+}
+.login-weixin{
+    width: 30px;
+    height: 30px;
+    line-height: 35px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    background-color: #00D20D;
+}
+.login-qq>.qq{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    background: url("../images/icons_type.png") no-repeat 20% 50%;
+}
+.login-weibo>.weibo{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    background: url("../images/icons_type.png") no-repeat 42% 50%;
+}
+.login-zhifubao>.zhifubao{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    background: url("../images/icons_type.png") no-repeat 65% 50%;
+}
+.login-weixin>.weixin{
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    background: url("../images/icons_type.png") no-repeat 96% 50%;
+}
+.sidebar {
+    display: none;
+    color: #ABABAB;
+}
+.erweima{
+    margin-top: 70px;
+}
+.app{
+    margin-top: 10px;
+}
+.app a{
+    text-decoration: none;
+    color: #EF5B00;
+    margin-left: 5px;
+    margin-right: 5px;
+}

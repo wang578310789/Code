@@ -1,0 +1,30 @@
+*{margin: 0;padding: 0;}
+.nav{
+    list-style: none;
+    height: 50px;
+    line-height: 50px;
+    background: rgb(130, 243, 209);
+}
+li{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+.rwo::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.computer{
+    position: relative;
+}
+.top{
+    width: 100px;
+    position: absolute;
+    background: rgb(130, 200, 190);
+    display: none;
+}
+.top a{
+    display: block;
+}
+.computer:hover .top{display: block;}

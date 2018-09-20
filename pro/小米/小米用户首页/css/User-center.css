@@ -1,0 +1,96 @@
+*{margin: 0;padding: 0;}
+.user-center{
+    height: 150px;
+    background-color: #EBEBEB;
+}
+.user-name{
+    width: 320px;
+    height: 150px;
+    position: relative;
+}
+.user-name img{
+    position: absolute;
+    top: 20px;
+    left: 40px;
+}
+.user-name-one{
+    position: absolute;
+    font-size: 18px;
+    top: 30px;
+    left: 160px;
+}
+.user-name-two{
+    position: absolute;
+    top: 65px;
+    left: 160px;
+}
+.user-name-two a{
+    margin-right: 25px;
+}
+.user-name-three{
+    position: absolute;
+    top: 85px;
+    left: 160px;
+}
+.user-name-three a{
+    margin-right: 25px;
+}
+.user-center-phone{
+    width: 200px;
+    height: 90px;
+    border-left: 1px solid rgb(158, 158, 158);
+    box-sizing: border-box;
+    position: absolute;
+    left: 310px;
+    top: 25px;
+}
+.user-center-phone img{
+    top: 25px;
+    left: 30px;
+}
+.user-center-phone-one{
+    position: absolute;
+    font-size: 14px;
+    top: 25px;
+    left: 80px;
+}
+.user-center-phone-two{
+    position: absolute;
+    font-size: 14px;
+    top: 40px;
+    left: 80px;
+}
+.user-center-phone-two a{
+    text-decoration: none;
+    color: #19BEBE;
+    margin-left: 5px;
+}
+.user-center-wechat{
+    width: 200px;
+    height: 90px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 520px;
+    top: 25px;
+}
+.user-center-wechat img{
+    top: 25px;
+    left: 30px;
+}
+.user-center-wechat-one{
+    position: absolute;
+    font-size: 14px;
+    top: 25px;
+    left: 80px;
+}
+.user-center-wechat-two{
+    position: absolute;
+    font-size: 14px;
+    top: 40px;
+    left: 80px;
+}
+.user-center-wechat-two a{
+    text-decoration: none;
+    color: #19BEBE;
+    margin-left: 5px;
+}

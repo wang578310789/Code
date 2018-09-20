@@ -1,0 +1,33 @@
+*{margin: 0;padding: 0;}
+.parent{
+    list-style: none;
+    line-height: 50px;
+    background: pink;
+}
+a{
+    text-decoration: none;
+    color: rgb(61, 60, 60);
+}
+li{
+    float: left;
+    width: 100px;
+    text-align: center;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.drop{position: relative;}
+.drop-content{
+    background: rgb(248, 177, 189);
+    width: 100px;
+    position: absolute;
+}
+.none{
+    display: none;
+}
+.drop-content a{
+    display: block;
+}
+/*.drop:hover .drop-content{display: block;}*/

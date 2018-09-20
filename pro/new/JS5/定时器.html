@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">点我</button>
+    <script>
+        /* */
+        // 设置定时器
+        var btn = document.getElementById("btn");
+        btn.onclick = function(){
+            setInterval(go,100)
+        }
+        function go(){
+            alert("请下载")
+        } 
+        
+        /* 
+        // 清除定时器
+        var num = 0;
+        var max = 3;
+        var timer;
+        timer = setInterval(function(){
+            if(num>max){
+                clearInterval(timer);
+            }else{
+                alert(num)
+                num++;
+            }
+        },100) 
+        */
+    </script>
+</body>
+</html>

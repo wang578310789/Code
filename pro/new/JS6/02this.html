@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="hello" id="test">
+    <script>
+        var value = "change"
+        var test = document.getElementById("test");
+        /* test.onclick = function(){
+            go();//this还是指向window -->函数正常调用，shis指向window 
+        }
+        function go(){
+            console.log(this.value);
+        } */
+        test.onclick = function(){
+            setTimeout(()=>{
+                console.log(this.value);
+            },300)
+            //go();
+        }
+        var go = () => {
+            console.log(this.value);
+        }
+    </script>
+</body>
+</html>

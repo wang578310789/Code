@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.baidu.com" id="test">hello world</a>
+    <script>
+        //当表单的submit按钮被点击时，表单会触发onsubmit事件
+        var a = document.getElementById("test");
+        a.onclick = function(event){
+            var event
+            try{
+                //chrome
+                event = event;
+            }
+            catch(err){
+                //ie9以下
+                event = window.event();
+            }
+            window.location.href="https://www.sogou.com";
+            event.preventDefault();
+        }
+    </script>
+</body>
+</html>

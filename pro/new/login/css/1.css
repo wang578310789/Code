@@ -1,0 +1,185 @@
+*{margin: 0;padding: 0;}
+        .from {
+            width: 400px;
+            height: 500px;
+            margin: 10px auto;
+            border: 1px solid #333;
+            text-align: center;
+        }
+        ul {
+            width: 350px;
+            height: 30px;
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        li {
+            width: 175px;
+            height: 30px;
+            text-align: center;
+            list-style: none;
+            float: left;
+            font-size: 26px;
+        }
+
+        .content {
+            height: 280px;
+            position: relative;
+        }
+
+        .content>div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+        .current {
+            color: #EF5B00;
+        }
+        .saoma{
+            border-left: 2px solid #E0E0E0;
+            box-sizing: border-box;
+        }
+        .two {
+            display: none;
+            color: #ABABAB;
+        }
+        .two-erweima{
+            margin-top: 70px;
+        }
+        .two-app{
+            margin-top: 10px;
+        }
+        .two-app a{
+            text-decoration: none;
+            color: #EF5B00;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .one input{
+            width: 350px;
+            height: 50px;
+            margin-top: 30px;
+            box-sizing: border-box;
+        }
+        .one button{
+            width: 350px;
+            height: 50px;
+            margin-top: 30px;
+            background-color: #EF5B00;
+            border: none;
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+        .register{
+            width: 350px;
+            height: 20px;
+            margin: 10px auto;
+        }
+        .register-one{
+            float: left;
+        }
+        .register-one a{
+            text-decoration: none;
+            color: #EF5B00;
+        }
+        .register-two{
+            float: right;
+        }
+        .register-two a{
+            text-decoration: none;
+            color: #ABABAB;
+        }
+        .register-two span{
+            color: #ABABAB;
+        }
+        .nav{
+            width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 95px;
+        }
+        .parent{
+            border-top: 1px solid #e0e0e0;
+            padding-top: 10px;
+        }
+        fieldset{
+            border: 0;
+        }
+        .child{
+            font-size: 14px;
+            color: #b0b0b0;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .login{
+            width: 350px;
+            height: 35px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        .login-qq{
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 35px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #0288d1;
+        }
+        .login-weibo{
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 35px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #d32f2f;
+        }
+        .login-zhifubao{
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 35px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #00AAEE;
+        }
+        .login-weixin{
+            width: 30px;
+            height: 30px;
+            margin-left: 10px;
+            margin-right: 10px;
+            line-height: 35px;
+            border-radius: 50%;
+            display: inline-block;
+            background-color: #00D20D;
+        }
+        .login-qq .qq{
+            display: inline-block;
+            z-index: 100;
+            width: 19px;
+            height: 19px;
+            background: url("../images/icons_type.png") no-repeat 21% 50%;
+        }
+        .login-weibo>.weibo{ 
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            background: url("../images/icons_type.png") no-repeat 42% 50%;
+        }
+        .login-zhifubao>.zhifubao{ 
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            background: url("../images/icons_type.png") no-repeat 65% 50%;
+        }
+        .login-weixin>.weixin{ 
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            background: url("../images/icons_type.png") no-repeat 95% 50%;
+        }

@@ -1,0 +1,158 @@
+.container{
+    width: 1240px;
+    margin: 30px auto;
+    display: flex;
+}
+.container-left{
+    width: 993px;
+    height: 1090px;
+    display: flex;
+    flex-direction: column;
+}
+.commodity{
+    width: 992px;
+    height: 800px;
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+}
+.commodity-box>div{
+    width: 248px;
+    height: 112px;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+}
+.commodity-box img{
+    margin-top: 20px;
+}
+.commodity-box{
+    width: 992px;
+    height: 112px;
+    display: flex;
+}
+.comm{
+    width: 992px;
+    height: 668px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.comm-phone{
+    width: 198px;
+    height: 300px;
+    text-align: center;
+    margin-top: 30px;
+}
+.comm-phone p{
+    margin: 0 auto;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+.comm-phone a{
+    display: block;
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+}
+.comm-phoner{
+    width: 198px;
+    height: 300px;
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+}
+.comm-phoner p{
+    margin: 0 auto;
+    width: 45px;
+    height: 20px;
+    line-height: 20px;
+    color: #FFFFFF;
+    font-size: 10px;
+}
+.comm-phoner a{
+    display: block;
+    font-size: 12px;
+    color: #333;
+    margin-top: 10px;
+}
+.bg{
+    position: absolute;
+    width: 198px;
+    height: 300px;
+    z-index: 100;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.container-right{
+    width: 227px;
+    height: 1090px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.recharge{
+    width: 227px;
+    height: 268px;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    position: relative;
+}
+.recharge h3{
+    position: absolute;
+    font-size: 18px;
+    color: #B4B4B4;
+    top: 15px;
+    left: 25px;
+}
+.recharge-one{
+    width: 170px;
+    height: 40px;
+    position: absolute;
+    top: 50px;
+    left: 25px;
+    border: 1px solid #DEDEDE;
+}
+.recharge-two{
+    width: 170px;
+    height: 40px;
+    position: absolute;
+    top: 110px;
+    left: 25px;
+    border: 1px solid #DEDEDE;
+}
+.recharge p{
+    font-size: 16px;
+    position: absolute;
+    color: #B4B4B4;
+    top: 170px;
+    left: 25px;
+}
+.recharge button{
+    width: 170px;
+    height: 40px;
+    position: absolute;
+    border: none;
+    top: 210px;
+    left: 25px;
+    color: #FFFFFF;
+    background: #B4B4B4;
+}
+.link{
+    width: 227px;
+    height: 245px;
+    text-align: center;
+    border: 1px solid #DEDEDE;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+.link p{
+    font-size: 18px;
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        .center{
+            margin-left: auto;
+            margin-right: auto;
+        }
+        a{
+            text-decoration: none;
+        }
+        .container{
+            cursor: pointer;
+            width:400px;
+            height:600px;
+            position: relative;
+            border:1px solid #eee;
+            overflow: hidden;
+        }
+        #list{
+            width:2800px;
+            height:600px;
+            position: absolute;
+        }
+        #list img{
+            float:left;
+        }
+        .arrow{
+            width:40px;
+            height:70px;
+            position:absolute;
+            z-index: 100;
+            display: block;
+            background: url("images/icon-slides.png") no-repeat;
+            top:50%;
+            margin-top: -35px;
+            cursor: pointer;
+        }
+        #prev{
+            left:0;
+        }
+        #next{
+            right:0;
+            background-position: -42px 0;
+        }
+        #buttons{
+            text-align: center;
+            width:100px;
+            height:10px;
+            position: absolute;
+            left:50%;
+            margin-left: -50px;
+            bottom:30px;
+            z-index:100;
+        }
+        #buttons>span{
+            display: inline-block;
+            width:10px;
+            height:10px;
+            border-radius: 50%;
+            border:1px solid #eee;
+            background-color: #666;
+            cursor: pointer;
+        }
+        #buttons .on {
+            background: orangered;
+        }
+        #prev,#next{
+            display: none;
+        }
+        #container:hover #prev{
+            display: block;
+        }
+        #container:hover #next{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container center" id="container">
+    <div id="list" style="left: -400px;">
+        <img src="images/05.png" alt="1"/>
+        <img src="images/01.png" alt="1"/>
+        <img src="images/02.png" alt="2"/>
+        <img src="images/03.png" alt="3"/>
+        <img src="images/04.png" alt="4"/>
+        <img src="images/05.png" alt="5"/>
+        <img src="images/01.png" alt="5"/>
+    </div>
+    <span id="prev" class="arrow"></span>
+    <span id="next" class="arrow"></span>
+    <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+</div>
+<script>
+    var container  = document.getElementById("container");
+    var list = document.getElementById("list");
+    var prev = document.getElementById("prev");
+    var next  = document.getElementById("next");
+    var btns  = document.getElementById("buttons").children;
+    var index =1;
+    var animated = false;
+    var timer; //存放定时器
+    for(var i = 0;i<btns.length;i++){
+        btns[i].onclick  = function(){
+            var myIndex = parseInt(this.getAttribute("index"));
+            console.log(myIndex);
+            var offset = (myIndex-index)*(-400);
+            if(!animated){
+                animate(offset);
+            }
+            index = myIndex;
+            showButton();
+        }
+    }
+    function showButton(){
+        for(var i =0;i<btns.length;i++){
+            btns[i].className="";
+        }
+        btns[index-1].className="on"
+    }
+    /*next,prev切换图片*/
+    function animate(offset) {
+        animated = true;
+        var newLeft =parseInt(list.style.left)+offset;
+        var time = 300; // 移动一张图片需要的总时间；
+        var interval = 10; //位移的间隔时间;
+        var speed = offset/(time/interval) ; //每次位移的量
+        go();
+        function go(){
+            if(speed < 0 && parseInt(list.style.left)>newLeft || speed >0 && parseInt(list.style.left)<newLeft){
+                list.style.left = parseInt(list.style.left)+speed+"px";
+                setTimeout(go,interval);
+            }else{
+                animated = false;
+                list.style.left = newLeft+"px";
+                if(newLeft>-400){
+                    /*当left值大于-600px时,回到第5张图片,list的left值为-3000px*/
+                    list.style.left = -2000+"px";
+                }
+                if(newLeft<-2000){
+                    /*当left值小于-3000px,回到第1张图片,list的left值为-600px*/
+                    list.style.left=-400+"px";
+                }
+            }
+        }
+
+    }
+    /*自动播放相当于自动点击next按钮*/
+    function play(){
+        timer = setInterval(function(){
+            next.onclick();
+        },2000)
+    }
+    /*停止动画*/
+    function stop(){
+        clearInterval(timer);
+    }
+    next.onclick = function(){
+        /*点击一下list的left值加-600*/
+        if(!animated){
+            animate(-400);
+        }
+        if(index==5){
+            index=1;
+        }else{
+            index++;
+        }
+        showButton();
+    };
+    prev.onclick = function () {
+        /*点击一下list的left值加600*/
+        if(!animated){
+            animate(400);
+        }
+        if(index==1){
+            index=5;
+        }else{
+            index--;
+        }
+        showButton();
+    };
+    /*自动播放*/
+    container.onmouseover = stop;
+    container.onmouseout = play;
+
+    play();
+
+</script>
+</body>
+</html>

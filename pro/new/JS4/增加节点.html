@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="parent">
+        <!-- <p>first</p> -->
+        <p id="one">hello world</p>
+        <!-- <img src="images/01.png" alt=""> -->
+    </div>
+    <script>
+        // parentNode.appendChild(newElement);
+        // document.createElement()-->创造一个元素节点 
+        // parentNode.insertBefore(newElement,targetElement);
+        var parent = document.getElementById("parent");
+        var img = document.createElement("img");
+        var one = document.getElementById("one");
+        var p = document.createElement("p");
+        var txt = document.createTextNode("first");
+        img.src = "images/01.png";
+        img.id = "img";
+        p.appendChild(txt);
+        parent.insertBefore(p,one);
+        //class属性特殊,通过className设置
+        //img.className = "img";
+        parent.appendChild(img);
+        console.log(p);
+        console.log(img);
+    </script>
+</body>
+</html>

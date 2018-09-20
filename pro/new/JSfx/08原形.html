@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 原形：push，pop，slice
+        // 只要在圆形上定义一个方法，所有实例化的对象都共享这个方法
+        var arr = [1,2,3,4,5];
+        Array.prototype.max = function (arr) {
+            return Math.max(...arr);
+        }
+        console.log(arr.max(arr));
+    </script>
+</body>
+</html>

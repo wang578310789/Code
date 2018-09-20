@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/a.js"></script>
+    <script src="js/b.js"></script>
+</head>
+<body>
+    <script>
+        /*
+            在a.js里声明的变量 在b.js里任然可以用
+            全局变量:在函数外声明的就叫全局变量
+            作用范围:整个window
+        */
+        /*
+            局部变量:在函数内部声明的变量叫局部变量
+            作用范围:只在函数里面
+        */
+       function b (){
+           var c = 30;
+           console.log(c); 
+       }
+       b();
+       console.log(c);
+        
+    </script>
+</body>
+</html>

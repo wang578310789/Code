@@ -1,0 +1,46 @@
+.foot{
+    height: 248px;
+    background-color: #515151;
+    margin-top: 50px;
+    color: #CBCBCB;
+}
+.frame{width: 1000px}
+.home,.gy,.bq,.gf{float: left;font-size: 14px;}
+.home{
+    margin-top: 40px;
+    margin-left: 10px;
+}
+.wei{padding: 10px 0;margin-top: 10px;color: white;font-size: 15px}
+
+.gy{
+    margin-left: 110px;
+    margin-top: 70px;
+}
+.bq{
+    margin-left: 80px;
+    margin-top: 70px;
+}
+.gf{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+.gy>p,.bq>p,.gf>p{padding: 4px}
+
+.float:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.lin{
+    width: 1040px;
+    border-bottom: 1px solid #666;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+}
+.an{
+    font-size: 13px;
+}
+.sp2{padding-left: 30px}
+.sp3{padding-left: 380px}
+.foot a{color:#CBCBCB};

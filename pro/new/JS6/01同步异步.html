@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 同步：代码一步一步执行，顺序不能改变
+        // 异步：代码不会按顺序执行
+        function test(){
+            alert(1);
+            setTimeout(function(){
+                alert(3);
+            },3000)
+            alert(2);
+        }
+        test();
+    </script>
+</body>
+</html>

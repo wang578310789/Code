@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 500px;
+            height: 500px;
+            background: red;
+            display: flex;
+            /*
+            justify-content:space-between||space-around||space-evenly||flex-end||flex-start||center 
+            space-between两端对齐，子元素之间间隔相等
+            space-around子元素之间的间隔，比子元素到父元素边框的间隔大一倍
+            space-evenly所有间隔相等
+            */
+            justify-content: space-evenly; 
+        }
+        .parent>div{
+            width: 100px;
+            height: 100px;
+        }
+        .one{
+            background: yellow;
+        }
+        .two{
+            background: black;
+        }
+        .three{
+            background: purple;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="one"></div>
+        <div class="two"></div>
+        <div class="three"></div>
+    </div>
+</body>
+</html>

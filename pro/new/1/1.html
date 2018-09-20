@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent{
+            border: 1px solid #333;
+            width: 800px;
+            height: 600px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+            align-items:flex-end;
+            flex-wrap: wrap;/*换行*/
+            /*
+            flex----自适应
+            flex-wrap----设置子元素是否换行，默认值为nowrap
+            flex-wrap---nowrap | wrap | wrap-reverse
+            flex----flow-direction | flow-wrap
+            //设置子元素水平方向对齐
+            justify-content: flex-start | flex-end | space-around | space-between | space-evenly |
+            //设置垂直方向对齐
+            align-items：flex-start | flex-end | center | stretch(不能设置高度) |
+            */
+            /*
+            子元素可以设置的属性
+            order--设置元素水平方向的项目的排列顺序
+            align-selft  设置自身的对齐方向
+            tip:这几个参数默认情况下，设置的都是垂直方向
+            flex-start|flex-end|center
+            */
+        }
+        .parent>div{
+            width: 180px;
+            height: 240px;
+            margin-top: 10px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

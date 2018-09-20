@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding:0;}
+        input{
+            width: 200px;
+            height: 40px;
+            border-radius: 20px;
+            border: 1px solid #333;
+            position: relative;
+        }
+        button{
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            background: url("images/topbar.png") no-repeat 4% 54%;
+            left: 10px;
+            top: 10px;
+            border: none;
+        }
+        .parent{
+            width: 158px;
+            height: 32px;
+            margin: 100px;
+            position: relative;
+        }
+        .parent>input{
+            position: absolute;
+        }
+        .parent>:first-child{
+            width: 158px;
+            height: 32px;
+            border: 1px solid #333;
+            border-radius: 15px;
+        }
+        .parent>:last-child{
+            width: 20px;
+            height: 20px;
+            z-index: 100;
+            background: url("images/topbar.png");
+            background-position: -10px -106px;
+            border: none;
+            outline: none;
+            left: 10px;
+            top: 7px;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" placeholder="搜索">
+    <button></button>
+
+    <form class="parent">
+        <input type="text">
+        <input type="submit" value="">
+    </form>
+</body>
+</html>

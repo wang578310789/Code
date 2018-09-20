@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .nav{
+            width: 1200px;
+            height: 900px;
+            border: 1px solid #333;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box{
+            width: 1200px;
+            height: 300px;
+            border-bottom: 1px solid #333;
+            display: flex;
+        }
+        .box>div{
+            flex: 1;
+            border-left: 1px solid #333;
+        }
+        .box>.one{
+            flex: 2;
+        }
+        .box-1{
+            width: 1200px;
+            height: 300px;
+            border-bottom: 1px solid #333;
+            display: flex;
+        }
+        .box-1>div{
+            flex: 1;
+            border-left: 1px solid #333;
+        }
+        .one-1{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+        .one-1>div{
+            flex: 1;
+            border-bottom: 1px solid #333;
+        }
+
+        .box-2{
+            width: 1200px;
+            height: 300px;
+            border-bottom: 1px solid #333;
+            display: flex;
+        }
+        .box-2>div{
+            flex: 1;
+            border-left: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <div class="box">
+        <div class="one"></div>
+        <div></div>
+        <div class="two"></div>
+    </div>
+    <div class="box-1">
+        <div class="one-1">
+            <div></div>
+            <div></div>
+        </div>
+        <div></div>
+        <div></div>
+        <div class="three"></div>
+    </div>
+    <div class="box-2">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+</body>
+</html>

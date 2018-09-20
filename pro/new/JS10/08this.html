@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            call -- 改变函数内部this，关键字的指向  call(函数名,值)
+            apply -- 改变函数内部this，关键字的指向  call(函数名,数组)
+            两者传参数不一样其他都一样，call 正常传参，apply 传数组
+        */
+        var wang = {
+            name:"wang"
+        }
+        var yu = {
+            name:"yu",
+            sayName(){
+                console.log(this.name);
+            }
+        }
+        // yu.sayName.call(wang); //wang
+        // yu.sayName(); // yu
+        yu.sayName.apply(wang,[1,2]);
+    </script>
+</body>
+</html>

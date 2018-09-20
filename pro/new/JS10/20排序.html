@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr = [13,43,5,23,55,6];
+        //升序
+        /* var a = arr.sort(function(b,c){
+            return b-c;
+        })
+        console.log(a); */
+
+        //降序
+        /* var a = arr.sort(function(b,c){
+            return c-b;
+        })
+        console.log(a); */
+
+        var copyArr = [...arr];
+        var d = arr.sort(function(a,b){
+            return a-b;
+        })
+        var e = copyArr.sort((a,b)=>b-a);
+        console.log(d);
+        console.log(e);
+    </script>
+</body>
+</html>

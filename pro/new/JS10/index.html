@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            border: 10px solid #333;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="parent">1111</div>
+    <script>
+        /* 
+            jquery
+            append,prepend,before,after
+        */
+        /* 
+            如何将jquery对象转为javascript对象
+            $("#parent")[0]
+            $("#parent").get(0)
+        */
+        /*
+            width()--->只有width
+            innerWidth()--->width,padding -->clientWidth
+            outerWidth()--->width,padding,border -->offsetWidth
+        */
+        $(function(){
+            //$("#parent").append("<p>hello world</p>");   //下
+            //$("#parent").prepend("<p>hello world</p>");  //上
+            //$("#parent").before("<p>hello world</p>");  //上
+            //$("#parent").after("<p>hello world</p>");   //下
+            //var width = $("#parent").outerWidth();  //全都包含
+            //var width = $("#parent").innerWidth();  //不包括边框的宽度
+            //console.log(width);
+        })
+   </script>
+</body>
+</html>

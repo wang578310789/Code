@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent{
+            width: 600px;
+            height: 40px;
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .parent>input{
+            position: absolute;
+        }
+        .parent>:first-child{
+            width: 500px;
+            height: 40px;
+            border: 1px solid #4791FF;
+            font-size: 16px;
+        }
+        .parent>:last-child{
+            width: 100px;
+            height: 44px;
+            border: none;
+            left: 500px;
+            background-color: #317EF3;
+            color: #FFFFFF;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <form class="parent">
+        <input type="text">
+        <input type="submit" value="百度一下">
+    </form>
+</body>
+</html>

@@ -1,0 +1,136 @@
+.foot{
+    height: 520px;
+    background-color: #FAFAFA;
+}
+.service{
+    width: 1240px;
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    box-sizing: border-box;
+}
+.service>div{
+    width: 248px;
+    height: 160px;
+    text-align: center;
+}
+.service img{
+    margin-top: 40px;
+}
+.service p{
+    font-size: 18px;
+}
+.guild{
+    width: 1240px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+    border-bottom: 1px solid #dfdfdf;
+    box-sizing: border-box;
+}
+.guild>div{
+    width: 170px;
+    height: 120px;
+    text-align: center;
+    
+}
+.guild>div:not(:last-child){
+    margin-right: 20px;
+    border-right: 1px solid #dfdfdf;
+    box-sizing: border-box;
+}
+.foot-guild{
+    margin-top: 35px;
+}
+.foot-guild p{
+    color: #929091;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: left;
+}
+.foot-guild>.help{
+    font-size: 16px;
+    color: #494949;
+}
+.on-line{
+    margin-top: 35px;
+}
+.on-line>.number{
+    font-size: 24px;
+    color: #333;
+}
+.on-line p{
+    font-size: 12px;
+    color: #929091;
+}
+.on-line button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    color: #FFFFFF;
+    margin-top: 20px;
+    background-color: #FB4400;
+}
+.guild>.on-line{
+    margin-left: 30px;
+}
+.copyright{
+    width: 1240px;
+    height: 160px;
+    margin: 40px auto;
+    text-align: center;
+}
+.partner a{
+    font-size: 12px;
+    color: #929091;
+}
+.partner span{
+    font-size: 12px;
+    color: #929091;
+    margin-left: 5px;
+}
+.cop{
+    margin-bottom: 20px;
+}
+.cop a{
+    font-size: 12px;
+    color: #929091;
+}
+.lan{
+    width: 400px;
+    height: 40px;
+    margin: 0 auto;
+    
+}
+.lan img{
+    margin-top: 10px;
+}
+.language{
+    width: 200px;
+    height: 40px;
+    border: 1px solid #dfdfdf;
+    box-sizing: border-box;
+    position: relative;
+    float: right;
+}
+.ch{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+}
+.ch>a{
+    text-decoration: none;
+    color: #929091;
+}
+.ch span{
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #929091 transparent transparent transparent;
+    margin-left: 13px;
+    position: relative;
+    top: 3px;
+}

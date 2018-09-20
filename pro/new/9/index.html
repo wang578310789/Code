@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*透视必须在父元素上*/
+        .one{
+            display: flex;
+        }
+
+        .parentx{
+            margin: 100px auto;
+            width: 300px;
+            border: 1px solid #333;
+            padding: 10px;
+            perspective: 400px;/*透视*/
+        }
+        .parentx img{
+            width: 300px;
+            transition: all 1s;
+        }
+        .parentx img:hover{
+            transform: rotateX(180deg);
+        }
+
+
+
+        .parenty{
+            margin: 100px auto;
+            width: 300px;
+            border: 1px solid #333;
+            padding: 10px;
+            perspective: 400px;/*透视*/
+        }
+        .parenty img{
+            width: 300px;
+            transition: all 1s;
+        }
+        .parenty img:hover{
+            transform: rotateY(180deg);
+        }
+
+
+
+        .parentz{
+            margin: 100px auto;
+            width: 300px;
+            border: 1px solid #333;
+            padding: 10px;
+            perspective: 400px;/*透视*/
+        }
+        .parentz img{
+            width: 300px;
+            transition: all 1s;
+        }
+        .parentz img:hover{
+            transform: rotateZ(180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <div class="parentx">
+            <p>沿着X轴旋转</p>
+            <img src="images/02.png" alt="">
+        </div>
+        <div class="parenty">
+            <p>沿着Y轴旋转</p>
+            <img src="images/02.png" alt="">
+        </div>
+        <div class="parentz">
+            <p>沿着Z轴旋转</p>
+            <img src="images/02.png" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>

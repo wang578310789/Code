@@ -1,0 +1,129 @@
+.foot{
+    height: 300px;
+    background: #ffffff;
+    clear: both;
+}
+.footer{
+    width: 1200px;
+    margin: 0 auto;
+}
+.footer-bo{
+    width: 1200px;
+    height: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.help-center{
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: 100px;
+    width: 50px;
+    float: left;
+}
+.help-center p{
+    font-size: 10px;
+    color: rgb(209, 209, 209);
+}
+.help-center h4{
+    font-size: 10px;
+    line-height: 30px;
+}
+.online-service{
+    width: 245px;
+    margin-top: 100px;
+    float: right;
+    text-align: center;
+}
+.online-service span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #678ee7;
+    border-radius: 15px;
+    color: #ffffff;
+}
+.online-service button{
+    width: 120px;
+    height: 30px;
+    color: #678ee7;
+    border: 1px solid rgb(209, 209, 209);
+    background: #ffffff; 
+    border-radius: 5px;
+}
+.online-service button:hover{
+    background: rgb(184, 182, 182);
+}
+.online-service p{
+    font-size: 12px;
+    color: rgb(200, 200, 200);
+    margin-top: 10px;
+    text-align: center;
+}
+.copyright span{
+    color: #ddd;
+    margin-left: 5px;
+    font-size: 12px;
+}
+.copyright a{
+    font-size: 12px;
+    color: #678ee7;
+}
+.copyright em{
+    font-size: 12px;
+}
+.language{
+    float: right;
+    margin-top: -35px;
+    position: relative;
+}
+.ch{
+    width: 110px;
+    height: 45px;
+    text-align: center;
+    line-height: 52px;
+    background: url("../images/language.png") no-repeat 12px 19px;
+    cursor: pointer;
+    background: #ffffff;
+}
+.language span{
+    width: 0px;
+    height: 0px;
+    display: inline-block;
+    border-width: 4px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+    margin-left: 13px;
+    position: relative;
+    top: 3px;
+}
+.en{
+    width: 110px;
+    height: 45px;
+    line-height: 45px;
+    background: url("../images/language.png") no-repeat 12px -15px;
+    position: absolute;
+    top: -47px;
+    left: -1px;
+    text-align: center;
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+    display: none;
+    background: #ffffff;
+}
+.language a{
+    text-decoration: none;
+}
+.ch a{
+    color: #333;
+}
+.language:hover .en{
+    display: block;
+    color: #678ee7;
+  
+}
+.language:hover{
+    border: 1px solid rgb(200, 200, 200);
+    border-radius: 5px;
+}

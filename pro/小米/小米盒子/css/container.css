@@ -1,0 +1,222 @@
+.container{
+    margin: 20px auto;
+}
+.subtitle{
+    width: 1240px;
+    height: 30px;
+    margin: 0 auto;
+}
+.subtitle-left{
+    width: 210px;
+    height: 30px;
+    float: left; 
+}
+.subtitle-left a{
+    font-size: 18px;
+}
+.subtitle-left span{
+    font-size: 12px;
+    color: black;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.subtitle-left em{
+    font-size: 12px;
+}
+.subtitle-right{
+    line-height: 30px;
+    float: right;
+}
+.subtitle-ul li{
+    list-style: none; 
+    float: left;
+    margin-left: 20px;
+}
+.subtitle-ul a{
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.subtitle-ul a:hover{
+    color: #FF4A00;
+}
+.subtitle-ul button{
+    width: 120px;
+    height: 30px;
+    border: none;
+    background: #FF4A00;
+    color: #FFFFFF;
+}
+.prize{
+    width: 1240px;
+    height: 380px;
+    text-align: center;
+    position: relative;
+    border-top: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+.prize img{
+    position: absolute;
+    top: 10px;
+    left: 50px;
+}
+.p-one{
+    position: absolute;
+    left: 475px;
+    top: 60px;
+    font-size: 60px;
+}
+.p-two{
+    position: absolute;
+    color: #333;
+    top: 155px;
+    left: 515px;
+}
+.p-three{
+    position: absolute;
+    top: 190px;
+    left:557px;
+}
+.p-three a{
+    font-size: 50px;
+    color: #FF4A00;
+}
+.p-three span{
+    margin-left: 10px;
+    font-size: 25px;
+    color: #FF4A00;
+}
+.prize button{
+    width: 140px;
+    height: 50px;
+    background-color: #FF4A00;
+    border: none;
+    position: absolute;
+    top: 270px;
+    left: 555px;
+}
+.finger{
+    height: 491px;
+    background: url("../images/hz-29.jpg") no-repeat 50% 50%;
+}
+.socket{
+    height: 986px;
+    text-align: center;
+    margin: 0 auto;
+    background: url("../images/xiaomichazuo.png") no-repeat 50% 50%;
+}
+.socket-one{
+    font-size: 60px;
+    padding-top: 120px;
+}
+.socket-two{
+    margin-top: 10px;
+    color: #696864;
+}
+.socketer{
+    height: 1156px;
+    text-align: center;
+    margin: 0 auto;
+    background: url("../images/hz-25.jpg") no-repeat 50% 50%;
+}
+.socketer-one{
+    font-size: 60px;
+    padding-top: 120px;
+    color: #502D17;
+}
+.socketer-two{
+    margin-top: 10px;
+    color: #502D17;
+}
+.datu{
+    height: 1252px;
+    background: url("../images/dianying.png") no-repeat 50% 50%;
+}
+.jiating{
+    height: 970px;
+    background: url("../images/jiating.png") no-repeat 50% 50%;
+}
+.gift{
+    width: 555px;
+    height: 678px;
+    margin: 20px auto;
+    text-align: center;
+}
+.gift-one{
+    font-size: 60px;
+}
+.gift-two a{
+    font-size: 50px;
+    color: #FF4A00;
+}
+.gift-two span{
+    margin-left: 10px;
+    font-size: 25px;
+    color: #FF4A00;
+}
+.gift button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    background: #FF4A00;
+    border-radius: 5px;
+}
+.hzs{
+    width: 1240px;
+    height: 215px;
+    display: flex;
+    margin: 0 auto;
+}
+.hzs>div{
+    width: 240px;
+    height: 215px;
+    text-align: center;
+}
+.hzs img{
+    margin-top: 50px;
+}
+.hzs p{
+    font-size: 22px;
+    margin-top: 10px;
+    color: #939393;
+}
+.hzs>div:not(:last-child){
+    border-right: 1px solid #cacaca;
+    box-sizing: border-box;
+}
+.goods-box{
+    width: 1240px;
+    height: 480px; 
+    margin: 150px auto;
+    border-top: 1px solid #dfdfdf;
+}
+.goods{
+    width: 1240px;
+    height: 460px;
+    margin: 40px auto;
+    display: flex;
+}
+.goods>div{
+    width: 405px;
+    height: 415px;
+    text-align: center;
+}
+.goods>div:not(:last-child){
+    border-right: 1px solid #cacaca;
+    box-sizing: border-box;
+}
+.goods p{
+    font-size: 26px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.goods a{
+    display: block;
+    font-size: 18px;
+    color: #333;
+}
+.goods span{
+    color: #FF4A00;
+}

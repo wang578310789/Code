@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        /*
+           :nth-child()
+           even --> 偶数项
+           odd  --> 奇数项
+        */
+        /* li:nth-child(even){
+            color: red;
+        } */
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+    <script>
+        //按下标来，下标从0开始，偶数位红色，奇数为黄色
+        var lis = document.getElementsByTagName("li");
+        for(var i=0;i<lis.length;i++){
+            if(i%2==0){
+                lis[i].style.color = "red";
+            }else{
+                lis[i].style.color = "yellow";
+            }
+        }
+    </script>
+</body>
+</html>

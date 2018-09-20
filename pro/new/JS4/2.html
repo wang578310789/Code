@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .from {
+            width: 300px;
+            height: 400px;
+            margin: 10px auto;
+            border: 1px solid #333;
+            text-align: center;
+        }
+
+        ul {
+            width: 240px;
+            height: 20px;
+            text-align: center;
+        }
+
+        li {
+            list-style: none;
+            float: left;
+            margin-left: 20px;
+        }
+
+        .content {
+            height: 280px;
+            position: relative;
+            border-top: 1px solid #333;
+        }
+
+        .content>div {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+        }
+
+        .current {
+            color: #ff2d51;
+        }
+
+        .two {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="from">
+        <ul>
+            <li class="current">帐号登录</li> 
+            <li>扫码登录</li>
+        </ul>
+        <div class="content">
+            <div class="one">
+                <p>账号</p>
+            </div>
+            <div class="two">
+                <p>二维码</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var lis = document.getElementsByTagName("li");
+        var contents = document.querySelectorAll(".content>div");
+        for (let i = 0; i < lis.length; i++) {
+            lis[i].index = i;
+            lis[i].onclick = function () {
+                for (let i = 0; i < lis.length; i++) {
+                    lis[i].className = "";
+                }
+                this.className = "current";
+                for (let i = 0; i < contents.length; i++) {
+                    contents[i].style.display = "none";
+                }
+                contents[this.index].style.display = "block";
+            }
+        }
+
+    </script>
+</body>
+
+</html>

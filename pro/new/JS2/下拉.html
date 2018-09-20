@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        .parent{
+            height: 60px;
+            margin-top: 20px;
+        }
+        .child{
+            height: 40px;
+            float: right;
+        }
+        .child li{
+            float: left;
+            list-style: none;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .child a{
+            color: #333;
+            font-size: 13px;
+        }
+        .child a:hover{
+            color: cadetblue;
+        }
+        #two{
+            position: absolute;
+            width: 80px;
+            height: 120px;
+            font-size: 13px;
+            text-align: center;
+            border: 1px solid rgb(168, 168, 168);
+            top: 40px;
+            left: -30px;
+        }
+        #one{
+            position: relative;
+        }
+        #two::after{
+            position: absolute;
+            content: "";
+            border: 10px solid transparent;
+            border-bottom-color: rgb(168, 168, 168);
+            right: 31px;
+            top: -21px;
+        }
+        .three::after{
+            position: absolute;
+            content: "";
+            z-index: 100;
+            border: 10px solid transparent;
+            border-bottom-color: rgb(255, 255, 255);
+            right: 31px;
+            top: -19px;
+        }
+        #two p{
+            padding-top:5px;
+            padding-bottom: 5px;
+        }
+        #two p:hover{
+            background-color: cadetblue;
+            color: #FFFFFF;
+        }
+        .none{
+            display: none;
+        }
+        #one a::after{
+            content: "";
+            position: absolute;
+            border: 5px solid transparent;
+            border-top-color: #333;
+            z-index: 101;
+            left: 25px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+            <ul class="child">
+                <li><a href="#">新闻</a></li>
+                <li><a href="#">hao123</a></li>
+                <li><a href="#">地图</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">贴吧</a></li>
+                <li><a href="#">学术</a></li>
+                <li><a href="#">登录</a></li>
+                <li id="one">
+                    <a href="#">
+                        设置
+                    </a>
+                    <div id="two" class="none">
+                        <div class="three"></div>
+                        <p style="margin-top: 1px;">搜索设置</p>
+                        <p>高级搜索</p>
+                        <p>关闭预测</p>
+                        <p>隐私设置</p>
+                    </div>
+                </li>
+                <li><button>更多产品</button></li>  
+            </ul>
+        </div>
+        <script>
+            var one = document.getElementById("one");
+            var two = document.getElementById("two");
+            one.onclick = () =>{
+                two.classList.toggle("none");
+            }
+        </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .current{
+            background: #ff2d51;
+        }
+        .fs{
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p id="test" class="current bg">hello world</p>
+    <script>
+        // ele.setAttribute(attr,value)
+        // ele.style.cssAttr
+        // ele.className
+        // ele.style.cssText
+        /* 
+           ele.classList   获取的是一个class集合
+           ele.classList.add()
+           ele.classList.remove()
+           ele.classList.toggle() -->在add与remove之间切换
+           ele.classList.contains()-->是否包含某个class，结果返回boolean值
+        */
+
+        var test = document.getElementById("test");
+        test.onclick = function(){
+            // this.style.backgroundColor = "#0EA432"
+            // this.className  = "current";
+            // this.style.cssText = "color:red;font-size:30px;backgroundColor:yellow"
+            // this.classList.add("fs")
+            // this.classList.remove("current");
+            // this.classList.toggle("current");
+            // console.log(this.classList.contains("current"));
+            var test = document.getElementById("test");
+            test.setAttribute("style","color:#0EA432");
+            test.setAttribute("class","current");
+        }
+    </script>
+</body>
+</html>

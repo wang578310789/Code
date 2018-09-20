@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 200px;
+            height: 200px;
+            background: red !important;
+        }
+        @media (max-width:768px){
+            .one{ background: black !important; }
+        }
+        @media (min-width:767px) and (max-width:991px){
+            .one{ background: rebeccapurple !important; }
+        }
+        @media (min-width:992px) and (max-width:1199px){
+            .one{ background: yellow !important; }
+        }
+        @media (min-width:1200px){
+            .one{ background: tomato !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+</body>
+</html>

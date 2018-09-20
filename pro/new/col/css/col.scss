@@ -1,0 +1,74 @@
+@mixin fh{
+    float: left;
+    height: 100%;
+}
+//手机
+@media (max-width:767px){
+    .hidden-xs{
+        display: none !important;
+    }
+   @for $i from 1 through 12{
+    .col-xs-#{$i}{
+        width: 100%/12*$i;
+        @include fh;
+    }
+    .col-xs-offset-#{$i}{
+        margin-left: 100%/12*$i;
+    }
+    } 
+}
+//平板
+@media (min-width:768px) and (max-width:991){
+    .hidden-sm{
+        display: none !important;
+    }
+   .container{
+       width: 750px;
+   }  
+   @for $i from 1 through 12{
+        .col-sm-#{$i}{
+            width: 100%/12*$i;
+            @include fh;
+        } 
+        .col-sm-offset-#{$i}{
+             margin-left: 100%/12*$i;
+        }
+    } 
+}
+//电脑
+@media (min-width:992px) and (max-width:1119px){
+    .hidden-md{
+        display: none !important;
+    }
+    .container{
+        width: 970px;
+    } 
+    @for $i from 1 through 12{
+        .col-md-#{$i}{
+            width: 100%/12*$i;
+            @include fh;
+        } 
+    }
+ }
+
+ //大屏电脑
+ @media (min-width:1200px){
+    .hidden-lg{
+        display: none !important;
+    }
+     .container{
+         width: 1170px;
+     }
+     @for $i from 1 through 12{
+        .col-lg-#{$i}{
+            width: 100%/12*$i;
+            @include fh;
+        }
+    }
+}
+
+
+ .container{
+    margin-left: auto;
+    margin-right: auto;
+}

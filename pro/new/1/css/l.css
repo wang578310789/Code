@@ -1,0 +1,239 @@
+*{margin: 0;padding: 0}
+.content{
+    width: 1020px;
+    height: 770px;
+    background-color: #342e26;
+    margin-left: auto;
+    margin-right: auto;
+}    
+.left{
+    width: 300px;
+    display: flex;
+    flex-direction:column;
+    float: left;
+}
+
+.left-1{ 
+    height: 45px;
+    background: url("../images/head-bg.png") repeat-x;
+    margin-right: 1px;  
+    display: flex;
+}
+.left-1 img{
+    width: 40px;
+    height: 40px;
+    margin-top: 2px;
+}
+.left-1 a{
+    flex-direction: column;
+    text-decoration: none;
+    color: white;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.head-left img{
+    float: left;
+    margin-top: 3px; 
+}
+.left-2{ 
+    height: 66px;
+    background: url("../images/bg.png") repeat-x;
+    margin-top: -1px;
+    
+}
+.left-2 img{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction:column;
+    margin-left: 12px;
+    margin-top: 9px;
+}
+.left-2 a{
+    margin-left: 40px;
+    margin-top: -18px;
+    display: flex;
+    text-decoration: none;
+    color: #ecbd85;
+    font-size: 12px;
+}
+.left-2 span{
+    margin-right: 5px;
+}
+.left-3{ 
+    height: 45px;
+    background: url("../images/收据bg.png") repeat-x;
+    margin-top: -3px;
+    display: flex;
+}
+.left-3 img{
+    width: 20px;
+    height: 22px;
+    margin-left: 12px;
+    margin-top: 13px;
+}
+.left-3 a{
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+    margin-top: 12px;
+}
+.left-4{ 
+    height: 370px;
+    background: url("../images/gezi.png") repeat;
+}
+.left-4 table{
+    width: 300px;
+    height: 220px;
+    background-color: #f0e9d9;
+    font-size: 12px;
+    text-align: left;
+
+}
+.left-4 td{
+    border-top: 1px solid #c1ac97;
+    padding-left: 12px;
+}
+.left-4 th{
+    border-top: 1px solid #c1ac97;
+    padding-left: 12px;
+}.left-5{
+    width: 300px;
+    height: 140px;
+    background-color: #f3e7bf;
+}
+.left-5>.left-5-1{
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.left-5 input{
+    box-shadow: 0 0 2px 0;
+    margin-left: 5px;
+    box-sizing: border-box;
+    width:250px;
+    outline: none;
+    padding-left:20px;
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid #eee;
+    border-radius: 40px;
+    background: white;
+}
+.left-5 button{
+    box-shadow: 0 0 2px 0;
+    border:none;
+    cursor: pointer;
+    width:40px;
+    height:30px;
+    display: block;
+    z-index: 100;
+    position:absolute;
+    margin-top: -29px;
+    margin-left: 260px;
+    border-radius: 15px 15px 15px 15px;
+    background: white;
+}
+.left-5-1 a{
+    text-decoration: none;
+    color: red;
+    font-size: 20px;
+    
+}
+.left-6 a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+}
+.right{
+    width: 719px;
+    float: right;
+    display: flex;
+    flex-direction:column;
+}
+.right-1{
+    height: 45px;
+    background: url("../images/head-bg.png") repeat-x;
+}
+.box{
+    width: 719px;
+    height: 620px;
+}
+.nav{
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul{
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    border: 1px solid #333;
+    margin-top: 20px;
+}
+li{
+    width: 100px;
+    border-radius: 5px 5px 0 0;
+    background: #ecbd85;
+    text-align: center;
+}
+.con{
+    position: relative;
+    width: 700px;
+    height: 550px;
+    background: url("../images/zhongjian.png") repeat-y;
+    margin-left: 10px;
+    border-radius: 15px 15px 15px 15px;
+}
+.con>div{
+    position: absolute;
+    text-align: center;
+}
+.cake{
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fefefd;
+    border: 1px solid #f8e8d1;
+    margin-left: 90px;
+    margin-top: 40px;
+}
+.gao{
+    display: none;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #fefefd;
+    border: 1px solid #f8e8d1;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+.current{
+    background: #c6412e;
+}
+.current-1{
+    width: 50px;
+}
+.nav-1{
+    list-style: none;
+}
+.right-2{
+    width: 665px;
+    height: 70px;
+    margin-left: 45px;
+    margin-top: 20px;
+}
+.right-2 td{
+    width: 70px;
+    height: 70px;
+    text-align: center;
+}

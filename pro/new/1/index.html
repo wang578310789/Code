@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/l.css">
+</head>
+<body>
+<div class="content">
+    <div class="left">
+        <div class="left-1">
+            <img src="images/logo.png" alt="">
+            <a href="#">烘培+</a>
+            <a href="#">HONGBEI</a>
+        </div>
+        <div class="left-2">
+            <img src="images/用户名.png" alt="">
+            <a href="#">黑侠（光谷店）</a>
+            <img src="images/时间.png" alt=""> 
+            <a href="#"><span>2014-11-20</span><span>10:23</span><span>AM</span></a>
+        </div>
+        <div class="left-3">
+            <img src="images/收据.png" alt="">
+            <a href="#">收支明细</a>
+        </div>
+        <div class="left-4">
+            <table>
+                <tr><th></th><th>品名</th><th>数量</th><th>金额</th><th>结算价</th><th></th></tr>
+                <tr><td></td><td>蛋挞</td><td>5</td><td>60</td><td>60</td><th></th></tr>
+                <tr><td></td><td>全麦面包</td><td>1</td><td>10.5</td><td>10.5</td><th></th></tr>
+                <tr><td><img src="images/赠.png" alt=""></td><td>戚风蛋糕</td><td>1</td><td>20</td><td>0</td><th></th></tr>
+                <tr><td></td><td>三明治</td><td>5</td><td>60</td><td>60</td><th></th></tr>
+            </table>
+        </div>
+        <div class="left-5">
+            <div class="left-5-1"><a href="">总额：￥125.5</a></div>
+            <input type="text" placeholder="搜索商品"><button><img src="images/suosuo.png" alt=""></button>
+        </div>
+        <div class="left-6"><a href="#">会员信息:</a></div>
+    </div>
+    <div class="right">
+        <div class="right-1"></div>
+        <div class="box">
+            <ul class="nav">
+                <li class="current">戚风蛋糕</li>
+                <li>蛋挞</li>
+                <li>全麦面包</li>
+                <li>戚风蛋糕</li>
+                <li>三明治</li>
+                <li class="current-1"></li>
+            </ul> 
+            <div class="con">
+                <div class="cake">巧克力蛋糕</div>
+                <div class="gao">巧克力蛋糕</div>
+            </div>
+        </div>
+        <div class="right-2">
+            <table>
+                <tr>
+                    <td><img src="images/guanlitai.png" alt=""></td>
+                    <td><img src="images/gouwuka.png" alt=""></td>
+                    <td><img src="images/huiyuan.png" alt=""></td>
+                    <td><img src="images/cuxiao.png" alt=""></td>
+                    <td><img src="images/dinghuo.png" alt=""></td>
+                    <td><img src="images/jiaoban.png" alt=""></td>
+                    <td><img src="images/guadan.png" alt=""></td>
+                    <td><img src="images/收银.png" alt=""></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+<script> 
+    $(function(){
+        $('.nav>li').click(function(){
+            $(this).addClass("current").siblings().removeClass("current")
+            console.log($(this).index())
+            $(".con>div").eq($(this).index()).show(300).siblings().hide(300)
+        })
+    })
+</script>
+
+</body>
+</html>
