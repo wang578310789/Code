@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#000000",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "小程序",
+    "backgroundColor": "#ffffff",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/index/index",
+      "text": "text",
+      "iconPath": "images/yuedu.png",
+      "selectedIconPath": "images/yuedu_hl.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "text",
+        "iconPath": "images/yuedu.png",
+        "selectedIconPath": "images/yuedu_hl.png"
+      }
+    ]
+  }
+}

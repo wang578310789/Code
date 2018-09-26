@@ -1,0 +1,1 @@
+<image bindtap="click" src="{{show?'/images/ciwei.png':'/images/ciwei_hl.png'}}" />
