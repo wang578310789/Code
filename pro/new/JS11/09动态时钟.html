@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_831490_s9m6ithwjt9.css">
+    <style>
+        .iconfont{
+            font-size: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/0.png" alt="">
+        <img src="images/0.png" alt="">
+        <i class="iconfont">&#xe636;</i>
+        <img src="images/0.png" alt="">
+        <img src="images/0.png" alt="">
+        <i class="iconfont">&#xe636;</i>
+        <img src="images/0.png" alt="">
+        <img src="images/0.png" alt="">
+    </div>
+    <script>
+        showTime();
+        setInterval(showTime,1000);
+        function showTime(){
+            //1.获取时分秒
+            var oDate = new Date();
+            var hour = oDate.getHours();
+            var minute = oDate.getMinutes(); 
+            var second = oDate.getSeconds();
+            var img = document.getElementsByTagName("img");
+
+            //2.将它们拼接为字符串    当<10,在前面补0 
+            function transform(value){
+                if(value<10){
+                    return "0"+value;
+                }else{
+                    return ""+value;
+                }
+            }
+            // 将时分秒转化为字符串
+            var allTime = transform(hour)+transform(minute)+transform(second);
+
+            //3.对字符串进行循环，将每一位装载到对应图片的路径
+            for(var i=0;i<allTime.length;i++){
+                img[i].src="images/"+allTime.charAt(i)+".png";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 字符串中支持正则的API
+        // match
+        // 修饰词   g --> 全局搜索  i --> 忽略大小写
+        // search()  -- 搜索，值返回下标
+        // replace() -- 替换 
+        var reg = /l/ig;
+        var str = "hellLo";
+        console.log(str.match(reg)); //["l","l","L"]
+        console.log(str.search(reg)); //2
+        console.log(str.replace(reg,"**")); //he******o
+    </script>
+</body>
+</html>
